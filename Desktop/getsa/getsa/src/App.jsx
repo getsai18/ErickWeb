@@ -13,11 +13,11 @@ function App() {
 
   const arreglo = ["texto1", "texto2"];
 
-  const lista = <ul>
+  const lista = (<ul>
       <li>1</li>
       <li>2</li>
       <li>3</li>
-  </ul>;
+  </ul>);
 
   return (
     <>
@@ -28,10 +28,15 @@ function App() {
       <Toti>
         ..
       </Toti>
-      <Component2>
+      <Component2
+        fName = "Get"
+        lName = "Angulo"
+        list = {lista}
+      />
+          
+          
+      
 
-      </Component2>
- 
       <Component1>
 
       </Component1>

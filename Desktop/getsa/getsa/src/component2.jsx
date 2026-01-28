@@ -1,19 +1,14 @@
 import React from 'react'
 import Camioneta from '../public/duster.jpg'
 
-const component2 = () => {
+const component2 = ({fName, lName, list}) => {
 
     function Persona(){
-        const Persona = {
-            nombre: 'Getsai',
-            edad: 18
-        }
+         
       return (
         <>
-        <ol>
-            <li>nombre: {Persona.nombre}</li>
-            <li>nombre: {Persona.edad}</li>
-        </ol>
+          <h2>Getsai -- Componente nieto</h2>
+          <p>Nombre nieto : {fName}</p>
        </>
       )
     }
@@ -28,6 +23,8 @@ const component2 = () => {
       </div>
       <img src={Camioneta} alt='Duster 2026' />
 
+      <p>Nombre {fName}  Apellido: {lName} <br /></p>
+      <div className='lista'>Lista: {list}</div>
       <Persona />
     
     </div>
