@@ -1,12 +1,25 @@
-import Component1 from './component1'
+import Component1 from './Component1'
+import Events from './Events'
+
 import './App.css'
 
 function App() {
+
   const myJson = {
     j1: "Nombre",
     j2: "Apellido",
-    j3: "Color"
+    j3: "Color",
+    status: true,
+    sangre: "O+"
   }
+
+  
+  if(myJson.status === false){
+    return (
+      <p>No hay ficha medica</p>
+    )
+  }
+
 
   return (
     <>
@@ -16,6 +29,8 @@ function App() {
      varThree = "variable numero 3"
      myJson={myJson}
      />
+
+     <Events/>
     </>
   )
 }

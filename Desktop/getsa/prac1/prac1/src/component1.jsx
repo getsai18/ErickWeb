@@ -1,6 +1,6 @@
 import React from 'react'
 
-const component1 = ({varOne, varTwo, varThree, myJson}) => {
+const Component1 = ({varOne, varTwo, varThree, myJson}) => {
   function Nieto(){
     return(
         <>
@@ -8,6 +8,8 @@ const component1 = ({varOne, varTwo, varThree, myJson}) => {
             <p>{myJson.j1}</p>
             <p>{myJson.j2}</p>
             <p>{myJson.j3}</p>
+            <p>{myJson.status}</p>
+            <p>Tipo sangre: {myJson.sangre ? myJson.sangre: "No hay tipo de snagre"}</p>
         </>
     )
   }
@@ -32,4 +34,4 @@ const component1 = ({varOne, varTwo, varThree, myJson}) => {
   )
 }
 
-export default component1
+export default Component1
